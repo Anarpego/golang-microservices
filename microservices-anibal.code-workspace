@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"uri": "vscode-remote://wsl+debian/home/anarpego/microservices-anibal"
+		},
+		{
+			"uri": "vscode-remote://wsl+debian/home/anarpego/microservices-anibal/front-end"
+		},
+		{
+			"uri": "vscode-remote://wsl+debian/home/anarpego/microservices-anibal/broker-service"
+		}
+	],
+	"remoteAuthority": "wsl+Debian",
+	"settings": {}
+}
