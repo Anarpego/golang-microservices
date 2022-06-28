@@ -8,6 +8,9 @@
 		},
 		{
 			"uri": "vscode-remote://wsl+debian/home/anarpego/microservices-anibal/broker-service"
+		},
+		{
+			"uri": "vscode-remote://wsl+debian/home/anarpego/microservices-anibal/project"
 		}
 	],
 	"remoteAuthority": "wsl+Debian",
