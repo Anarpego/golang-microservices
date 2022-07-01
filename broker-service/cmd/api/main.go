@@ -18,7 +18,6 @@ type Config struct {
 }
 
 func main() {
-
 	// try to connect to rabbitmq
 	rabbitConn, err := connect()
 	if err != nil {
@@ -44,7 +43,6 @@ func main() {
 	if err != nil {
 		log.Panic(err)
 	}
-
 }
 
 func connect() (*amqp.Connection, error) {
