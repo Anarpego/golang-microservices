@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun 30 08:39:59 2022
+# Make data base, printed on Mon Jul 04 17:35:20 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\aniba
 # environment
 LOCALAPPDATA = C:\Users\aniba\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-10ea63f3-73de-4696-9989-db103e1f8243-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbd04d9b-af5e-4fa6-a105-7b4d91c0e70d-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
@@ -37,14 +37,13 @@ PROCESSOR_LEVEL = 6
 # environment
 PSMODULEPATH = C:\Users\aniba\OneDrive\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
 # default
-MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/too 
-ls/install/bin/make.exe
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # environment
 GOPATH = C:\Users\aniba\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_21596_STJYLECSCXLNEUXM
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2196_IPQSEEMMAOPFUGQZ
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.18.3
 # environment
@@ -104,7 +103,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 21596
+VSCODE_PID = 2196
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -154,7 +153,7 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132928731940735097
 # environment
-WT_SESSION = 49013a00-7d50-4094-bd46-e41f45685aeb
+WT_SESSION = 1388f61e-0835-4eab-b7c8-cdf868262b63
 # environment
 LOGONSERVER = \\LAPTOP-8L9L38EP
 # environment
@@ -228,8 +227,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest- 
-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 REGIONCODE = NA
 # environment
@@ -245,9 +243,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/aniba/microservices-anibal, mtime 1656566682): 13 files, no impossibilities.
+# . (key c:/Users/aniba/microservices-anibal, mtime 1656630008): 15 files, no impossibilities.
 
-# 13 files, no impossibilities in 1 directories.
+# 15 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -297,19 +295,20 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=7/1024=1%, Rehash=0, Collision 
+s=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 20 / storage = 251 B / avg = 12 B
-# current buf: size = 8174 B / used = 251 B / count = 20 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 22 / storage = 281 B / avg = 12 B
+# current buf: size = 8174 B / used = 281 B / count = 22 / avg = 12 B
 
-# strcache performance: lookups = 23 / hit rate = 13%
+# strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
-# Load=20/8192=0%, Rehash=0, Collisions=0/23=0%
-# Finished Make data base on Thu Jun 30 08:39:59 2022
+# Load=22/8192=0%, Rehash=0, Collisions=0/25=0%
+# Finished Make data base on Mon Jul 04 17:35:20 2022
 
  
