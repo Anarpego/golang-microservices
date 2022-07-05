@@ -54,7 +54,7 @@ jobs:
    if: github.event_name == 'push'
    needs: Microservices-Build
    env:
-     broker-service: dev-anibal
+      PROJECT_ID: anibal-week9
    steps:
     - name: ⬇️ Downloading artifact
       uses: actions/download-artifact@v3
@@ -93,7 +93,7 @@ jobs:
     
     - name: Push the Broker Service Docker Image to Container Registry (GCR) 🧙🏼‍♂️⬆️
       run: |
-       docker tag broker:latest gcr.io/broker-service/broker:latest
-       docker tag broker:latest gcr.io/broker-service/broker:${{ steps.date.outputs.date }}
-       docker push gcr.io/broker-service/broker:latest
-       docker push gcr.io/broker-service/broker:${{ steps.date.outputs.date }}
+       docker tag broker:latest gcr.io/$PROJECT_ID/broker:latest
+       docker tag broker:latest gcr.io/$PROJECT_ID/broker:${{ steps.date.outputs.date }}
+       docker push gcr.io/$PROJECT_ID/broker:latest
+       docker push gcr.io/$PROJECT_ID/broker:${{ steps.date.outputs.date }}
