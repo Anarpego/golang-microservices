@@ -60,6 +60,8 @@ jobs:
         sudo rm -r listener-service/
         sudo rm -r logger-service/
         sudo rm -r mail-service/
+        sudo rm -r .git
+        sudo rm -r .github
         sudo rm  microservices-anibal.code-workspace
         sudo rm  microservices-anibalwin.code-workspace
         sudo rm  README.md
@@ -105,7 +107,7 @@ jobs:
       
     - name: Get current date # get the date of the build
       id: date
-      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
 
     - name: Build The Broker Service Docker image 🧙🏼‍♂️🛠️ 
