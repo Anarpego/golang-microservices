@@ -34,11 +34,12 @@ jobs:
         cd project
         make up_build
 
-        rm -r db-data
         echo "LS IN PROJECT DIRECTORY" 
         ls -la
 
-
+     - name: Removing the db-data directory 
+       run: |
+        rm -r project/db-data
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
        with: 
