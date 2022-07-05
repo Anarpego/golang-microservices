@@ -82,9 +82,13 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
+    - name: Copying the files for the build of the broker service docker image
+      run: |
+        cp broker-service/broker-service.dockerfile .
+        cp broker-service/brokerApp .
     - name: Build the Broker Service Docker image 🧙🏼‍♂️
       run: |
-        docker build -f broker-service/broker-service.dockerfile -t  broker:latest .
+        docker build -f broker-service.dockerfile -t  broker:latest .
         echo "LS supposdley in the broker service directory"
         ls -la
     
