@@ -35,6 +35,9 @@ jobs:
         
         make up_build
 
+        echo "LS IN PROJECT DIRECTORY" 
+        ls -la
+
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
        with: 
