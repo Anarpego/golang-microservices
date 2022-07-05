@@ -24,7 +24,7 @@ jobs:
                 
      - name: 🛠️ Build
        run: |
-        make up_build
+        make build_front_linux
 
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
