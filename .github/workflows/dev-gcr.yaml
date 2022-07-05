@@ -86,11 +86,10 @@ jobs:
       run: |
         cp broker-service/broker-service.dockerfile .
         cp broker-service/brokerApp .
+        ls -la
     - name: Build the Broker Service Docker image 🧙🏼‍♂️
       run: |
         docker build -f broker-service.dockerfile -t  broker:latest .
-        echo "LS supposdley in the broker service directory"
-        ls -la
     
     - name: Push the Broker Service Docker Image to Container Registry (GCR) 🧙🏼‍♂️⬆️
       run: |
