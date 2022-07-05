@@ -14,10 +14,15 @@ jobs:
      - name: 🛒 Checkout
        uses: actions/checkout@v3
        with:
-        submodules: true
         fetch-depth: 0
 
-     - name: Installing Docker Compose 🧐
+     - name: Set Up Golang
+       uses: actions/setup-go@v3
+       with:
+        go-version: '^1.18' # The Go version to download (if necessary) and use.
+     - run: go version
+
+     - name: Installing Docker Compose 
        run: |
         mkdir -p ~/.docker/cli-plugins/
         curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
