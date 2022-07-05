@@ -35,10 +35,12 @@ jobs:
         mkdir db-data
         mkdir db-data/postgres
         mkdir db-data/mongo
-        mkdir db-data/rabbit
-        
+        mkdir db-data/rabbitmq
+        sudo chown runner:docker db-data
+        sudo chown runner:docker db-data/postgres
+        sudo chown runner:docker db-data/mongo
+        sudo chown runner:docker db-data/rabbitmq
         make up_build
-
         echo "LS IN PROJECT DIRECTORY" 
         ls -la
         ls -la db-data
