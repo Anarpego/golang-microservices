@@ -17,10 +17,9 @@ jobs:
         submodules: true
         fetch-depth: 0
 
-     - name: Make Version 🧐
+     - name: Make Update 🧐
        run: |
-        sudo apt update
-        make -version
+        make update  
                 
      - name: 🛠️ Build
        run: |
