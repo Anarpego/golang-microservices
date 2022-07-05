@@ -19,7 +19,7 @@ jobs:
 
      - name: Make Update 🧐
        run: |
-        make update  
+        make -v  
                 
      - name: 🛠️ Build
        run: |
