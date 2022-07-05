@@ -8,7 +8,7 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  hugo:
+  Microservices-Build:
     runs-on: ubuntu-latest
     steps:
      - name: 🛒 Checkout
@@ -24,7 +24,7 @@ jobs:
                 
      - name: 🛠️ Build
        run: |
-        make build_front_linux
+        make up_build
 
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
