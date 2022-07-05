@@ -1,3 +1,4 @@
+SHELL=/bin/bash
 FRONT_END_BINARY=frontApp.exe
 BROKER_BINARY=brokerApp
 AUTH_BINARY=authApp
