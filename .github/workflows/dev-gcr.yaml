@@ -23,6 +23,7 @@ jobs:
                 
      - name: 🛠️ Build
        run: |
+        ls -la
         make up_build
 
      - name: ⬆️ Uploading artifact
