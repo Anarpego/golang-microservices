@@ -36,16 +36,15 @@ jobs:
         mkdir db-data/postgres
         mkdir db-data/mongo
         mkdir db-data/rabbitmq
-        sudo chown runner:docker db-data
-        sudo chown runner:docker db-data/postgres
-        sudo chown runner:docker db-data/mongo
-        sudo chown runner:docker db-data/rabbitmq
+        sudo chown -R runner:docker db-data
+        sudo chown -R runner:docker db-data/postgres
+        sudo chown -R runner:docker db-data/mongo
+        sudo chown -R runner:docker db-data/rabbitmq
         make up_build
         echo "LS IN PROJECT DIRECTORY" 
         ls -la
         ls -la db-data
-        echo "LS IN MONGO DIRECTORY"
-        ls -la db-data/mongo
+
 
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
