@@ -37,11 +37,35 @@ jobs:
         echo "LS IN PROJECT DIRECTORY" 
         ls -la
 
-     - name: Removing the db-data directory 
+     - name: Removing and copying and files 
        run: |
-        sudo rm -r project/db-data
-        ls -la project
 
+        cp broker-service/broker-service.dockerfile .
+        cp broker-service/brokerApp .
+        cp front-end/front-end.dockerfile .
+        cp front-end/frontEndApp .
+        cp authentication-service/authentication-service.dockerfile .
+        cp authentication-service/authApp .
+        cp listener-service/listener-service.dockerfile .
+        cp listener-service/listenerApp .
+        cp logger-service/logger-service.dockerfile .
+        cp logger-service/loggerServiceApp .
+        cp mail-service/mail-service.dockerfile .
+        cp mail-service/mailerApp .
+        sudo rm -r project/
+        sudo rm -r broker-service/
+        sudo rm -r front-end/
+        sudo rm -r authentication-service/
+        sudo rm -r listener-service/
+        sudo rm -r logger-service/
+        sudo rm -r mail-service/
+        sudo rm  microservices-anibal.code-workspace
+        sudo rm  microservices-anibalwin.code-workspace
+        sudo rm  README.md
+        sudo rm -r .vscode
+        sudo rm .gitignore
+        ls -la
+        
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
        with: 
@@ -82,14 +106,38 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
-    - name: Copying the files for the build of the broker service docker image
-      run: |
-        cp broker-service/broker-service.dockerfile .
-        cp broker-service/brokerApp .
-        ls -la
+    # - name:  ➡️ Copying the files for the build of the docker images ➡️
+      # run: |
+        # cp broker-service/broker-service.dockerfile .
+        # cp broker-service/brokerApp .
+        # cp front-end/front-end.dockerfile .
+        # cp front-end/frontEndApp .
+        # cp authentication-service/authentication-service.dockerfile .
+        # cp authentication-service/authApp .
+        # cp listener-service/listener-service.dockerfile .
+        # cp listener-service/listenerApp .
+        # cp logger-service/logger-service.dockerfile .
+        # cp logger-service/loggerServiceApp .
+        # cp mail-service/mail-service.dockerfile .
+        # cp mail-service/mailerApp .
+# 
+        # ls -la
     - name: Build the Broker Service Docker image 🧙🏼‍♂️
       run: |
         docker build -f broker-service.dockerfile -t  broker:latest .
+
+    - name: Build the Frontend Docker image 🪞
+      run: |
+        docker build -f front-end.dockerfile -t  frontend:latest .
+
+    - name: Build the Authencation Service Docker image 🗝️
+      run: |
+        docker build -f  authentication-service.dockerfile -t  auth:latest .
+
+    
+  
+
+    
     
     - name: Push the Broker Service Docker Image to Container Registry (GCR) 🧙🏼‍♂️⬆️
       run: |
@@ -97,3 +145,17 @@ jobs:
        docker tag broker:latest gcr.io/$PROJECT_ID/broker:${{ steps.date.outputs.date }}
        docker push gcr.io/$PROJECT_ID/broker:latest
        docker push gcr.io/$PROJECT_ID/broker:${{ steps.date.outputs.date }}
+
+    - name: Push the Frontend Docker Image to Container Registry (GCR) 🪞⬆️
+      run: |
+       docker tag frontend:latest gcr.io/$PROJECT_ID/frontend:latest
+       docker tag frontend:latest gcr.io/$PROJECT_ID/frontend:${{ steps.date.outputs.date }}
+       docker push gcr.io/$PROJECT_ID/frontend:latest
+       docker push gcr.io/$PROJECT_ID/frontend:${{ steps.date.outputs.date }}
+
+    - name: Push the Frontend Docker Image to Container Registry (GCR) 🗝️⬆️
+      run: |
+       docker tag auth:latest gcr.io/$PROJECT_ID/auth:latest
+       docker tag auth:latest gcr.io/$PROJECT_ID/auth:${{ steps.date.outputs.date }}
+       docker push gcr.io/$PROJECT_ID/auth:latest
+       docker push gcr.io/$PROJECT_ID/auth:${{ steps.date.outputs.date }}
