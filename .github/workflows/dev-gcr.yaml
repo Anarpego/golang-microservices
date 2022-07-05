@@ -39,7 +39,9 @@ jobs:
 
      - name: Removing the db-data directory 
        run: |
-        rm -r project/db-data
+        sudo rm -r project/db-data
+        ls -la project
+
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
        with: 
