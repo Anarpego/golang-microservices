@@ -72,21 +72,25 @@ jobs:
         service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
         project_id: ${{ env.broker-service }}
         export_default_credentials: true
+    - name: Configure Docker Client
+      run: |
+        gcloud auth configure-docker --quiet
+        gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
 
       
     - name: Get current date # get the date of the build
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
-    
-    - name: Build the Broker Service Docker image 🧙🏼‍♂️
+    - name: Change directory to broker-service
       run: |
         cd broker-service
-        docker build . --file Dockerfile --tag  broker:latest
-    - name: Configure Docker Client
+        ls -la
+    - name: Build the Broker Service Docker image 🧙🏼‍♂️
       run: |
-       gcloud auth configure-docker --quiet
-       gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
+        docker build . --file Dockerfile --tag  broker:latest
+        echo "LS supposdley in the broker service directory"
+        ls -la
     
     - name: Push the Broker Service Docker Image to Container Registry (GCR) 🧙🏼‍♂️⬆️
       run: |
