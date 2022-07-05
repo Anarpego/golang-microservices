@@ -13,6 +13,17 @@ services:
       mode: replicated
       replicas: 1
 
+  fronted:
+    build: 
+      context: ./../front-end
+      dockerfile: ./../front-end/front-end.dockerfile
+    restart: always
+    ports:
+      - "8030:8030"
+    deploy:
+      mode: replicated
+      replicas: 1
+
   logger-service:
     build:
       context: ./../logger-service
