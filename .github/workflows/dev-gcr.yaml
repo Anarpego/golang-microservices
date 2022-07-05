@@ -32,18 +32,11 @@ jobs:
        run: |
         ls -la
         cd project
-        mkdir db-data
-        mkdir db-data/postgres
-        mkdir db-data/mongo
-        mkdir db-data/rabbitmq
-        sudo chown -R runner:docker db-data
-        sudo chown -R runner:docker db-data/postgres
-        sudo chown -R runner:docker db-data/mongo
-        sudo chown -R runner:docker db-data/rabbitmq
         make up_build
+
+        rm -r db-data
         echo "LS IN PROJECT DIRECTORY" 
         ls -la
-        ls -la db-data
 
 
      - name: ⬆️ Uploading artifact
