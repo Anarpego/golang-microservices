@@ -78,7 +78,7 @@ jobs:
         gcloud auth configure-docker us-central1-docker.pkg.dev --quiet
 
       
-    - name: Get current date # get the date of the build
+    - name: Get current date #  get the date of the build
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
