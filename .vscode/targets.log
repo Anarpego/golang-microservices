@@ -7,8 +7,9 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
+ 
 
-# Make data base, printed on Mon Jul 04 17:35:20 2022
+# Make data base, printed on Mon Jul 04 18:11:02 2022
 
 # Variables
 
@@ -23,12 +24,13 @@ USERPROFILE = C:\Users\aniba
 # environment
 LOCALAPPDATA = C:\Users\aniba\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-dbd04d9b-af5e-4fa6-a105-7b4d91c0e70d-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c22a5c19-4e8d-4044-b128-a4d1e92b879b-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
 VSCODE_CWD = C:\Users\aniba\microservices-anibal
-# environment
+# environme 
+nt
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\windows
@@ -37,7 +39,8 @@ PROCESSOR_LEVEL = 6
 # environment
 PSMODULEPATH = C:\Users\aniba\OneDrive\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
 # default
-MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/too 
+ls/install/bin/make.exe
 # environment
 GOPATH = C:\Users\aniba\go
 # automatic
@@ -56,7 +59,8 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # environment
 VSCODE_LOG_STACK = false
-# automatic
+# auto 
+matic
 %F = $(notdir $%)
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\aniba\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
@@ -77,13 +81,14 @@ ONEDRIVE = C:\Users\aniba\OneDrive
 # environment
 POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 # makefile
-CURDIR := c:/Users/aniba/microservices-anibal
+CURDIR := c:/Users/aniba/microser 
+vices-anibal
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
 SPARK_HOME = C:\Users\aniba\Documents\Spark\spark-3.2.1-bin-hadoop3.2
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -97,7 +102,8 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
 # makefile
-MAKEFILE_LIST := 
+MAK 
+EFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
@@ -227,7 +233,8 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest 
+-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 REGIONCODE = NA
 # environment
@@ -243,7 +250,8 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/aniba/microservices-anibal, mtime 1656630008): 15 files, no impossibilities.
+# . (key c:/Users/aniba/microservices-anibal, mtime 1656979857): 15 files, no 
+ impossibilities.
 
 # 15 files, no impossibilities in 1 directories.
 
@@ -271,7 +279,8 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has not been updated.
+#  File h 
+as not been updated.
 
 # Not a target:
 makefile:
@@ -295,8 +304,8 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collision 
-s=0/16=0%
+# Load=7/1024=1%, Rehash=0, Collis 
+ions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -309,6 +318,6 @@ s=0/16=0%
 # strcache performance: lookups = 25 / hit rate = 12%
 # hash-table stats:
 # Load=22/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Mon Jul 04 17:35:20 2022
+# Finished Make data base on Mon Jul 04 18:11:02 2022
 
  
