@@ -7,9 +7,8 @@ make: *** No rule to make target 'all'.  Stop.
 # License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
- 
 
-# Make data base, printed on Mon Jul 04 18:11:02 2022
+# Make data base, printed on Tue Jul 05 07:15:00 2022
 
 # Variables
 
@@ -24,13 +23,12 @@ USERPROFILE = C:\Users\aniba
 # environment
 LOCALAPPDATA = C:\Users\aniba\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-c22a5c19-4e8d-4044-b128-a4d1e92b879b-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ea29b060-ad3e-4189-a7a8-dcd096a6b728-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
 VSCODE_CWD = C:\Users\aniba\microservices-anibal
-# environme 
-nt
+# environment
 CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
 # environment
 SYSTEMROOT = C:\windows
@@ -39,14 +37,13 @@ PROCESSOR_LEVEL = 6
 # environment
 PSMODULEPATH = C:\Users\aniba\OneDrive\Documents\PowerShell\Modules;C:\Program Files\PowerShell\Modules;c:\program files\powershell\7\Modules;C:\Program Files\WindowsPowerShell\Modules;C:\windows\system32\WindowsPowerShell\v1.0\Modules;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\platform\PowerShell
 # default
-MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/too 
-ls/install/bin/make.exe
+MAKE_COMMAND := C:/ProgramData/chocolatey/lib/make/tools/install/bin/make.exe
 # environment
 GOPATH = C:\Users\aniba\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2196_IPQSEEMMAOPFUGQZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27368_HWDENVZONOOQVQFX
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.18.3
 # environment
@@ -59,8 +56,7 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
 # environment
 VSCODE_LOG_STACK = false
-# auto 
-matic
+# automatic
 %F = $(notdir $%)
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\aniba\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
@@ -81,14 +77,13 @@ ONEDRIVE = C:\Users\aniba\OneDrive
 # environment
 POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 # makefile
-CURDIR := c:/Users/aniba/microser 
-vices-anibal
+CURDIR := c:/Users/aniba/microservices-anibal
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
 SPARK_HOME = C:\Users\aniba\Documents\Spark\spark-3.2.1-bin-hadoop3.2
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
 # environment
@@ -102,14 +97,13 @@ COMMONPROGRAMW6432 = C:\Program Files\Common Files
 # automatic
 +D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
 # makefile
-MAK 
-EFILE_LIST := 
+MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 2196
+VSCODE_PID = 27368
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -159,7 +153,7 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132928731940735097
 # environment
-WT_SESSION = 1388f61e-0835-4eab-b7c8-cdf868262b63
+WT_SESSION = 7b19d3fa-be07-4843-9a76-bc7e83f06067
 # environment
 LOGONSERVER = \\LAPTOP-8L9L38EP
 # environment
@@ -233,8 +227,8 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest 
--stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest- 
+stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 REGIONCODE = NA
 # environment
@@ -250,10 +244,9 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/aniba/microservices-anibal, mtime 1656979857): 15 files, no 
- impossibilities.
+# . (key c:/Users/aniba/microservices-anibal, mtime 1656990007): 16 files, no impossibilities.
 
-# 15 files, no impossibilities in 1 directories.
+# 16 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -279,8 +272,7 @@ all:
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File h 
-as not been updated.
+#  File has not been updated.
 
 # Not a target:
 makefile:
@@ -304,20 +296,19 @@ GNUmakefile:
 #  Failed to be updated.
 
 # files hash-table stats:
-# Load=7/1024=1%, Rehash=0, Collis 
-ions=0/16=0%
+# Load=7/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 22 / storage = 281 B / avg = 12 B
-# current buf: size = 8174 B / used = 281 B / count = 22 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 289 B / avg = 12 B
+# current buf: size = 8174 B / used = 289 B / count = 23 / avg = 12 B
 
-# strcache performance: lookups = 25 / hit rate = 12%
+# strcache performance: lookups = 26 / hit rate = 11%
 # hash-table stats:
-# Load=22/8192=0%, Rehash=0, Collisions=0/25=0%
-# Finished Make data base on Mon Jul 04 18:11:02 2022
+# Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
+# Finished Make data base on Tue Jul 05 07:15:00 2022
 
  

@@ -8,23 +8,39 @@ on:
     types: [opened, synchronize]
 
 jobs:
-  hugo:
+  Microservices-Build:
     runs-on: ubuntu-latest
     steps:
      - name: 🛒 Checkout
        uses: actions/checkout@v3
        with:
-        submodules: true
         fetch-depth: 0
 
-     - name: Make Version 🧐
+     - name: Set Up Golang
+       uses: actions/setup-go@v3
+       with:
+        go-version: '^1.18' # The Go version to download (if necessary) and use.
+     - run: go version
+
+     - name: Installing Docker Compose 
        run: |
-        sudo apt update
-        make -version
-                
+        mkdir -p ~/.docker/cli-plugins/
+        curl -SL https://github.com/docker/compose/releases/download/v2.6.0/docker-compose-linux-x86_64 -o ~/.docker/cli-plugins/docker-compose
+        chmod +x ~/.docker/cli-plugins/docker-compose
+        chmod +x ~/.docker/cli-plugins/docker-compose
      - name: 🛠️ Build
        run: |
-        make build_front_linux
+        ls -la
+        cd project
+        make up_build
+
+        echo "LS IN PROJECT DIRECTORY" 
+        ls -la
+
+     - name: Removing the db-data directory 
+       run: |
+        sudo rm -r project/db-data
+        ls -la project
 
      - name: ⬆️ Uploading artifact
        uses: actions/upload-artifact@v3
@@ -33,37 +49,36 @@ jobs:
         path: .
 
 
-  # Deploying:
-  #  runs-on: ubuntu-latest
-  #  if: github.event_name == 'push'
-  #  needs: hugo
-  #  env:
-    #  IMAGE_NAME: week9
-    #  PROJECT_ID: anibal-week9
-  #  steps:
-    # - name: ⬇️ Downloading artifact
-      # uses: actions/download-artifact@v3
-      # with:
-      #  name: my-artifact
-    #  
-    # 
-    # - name: Display structure of downloaded files
-      # run: ls -la
-# 
-# 
-    # - name: Deploying to GCR
-      # uses: google-github-actions/setup-gcloud@v0
-      # with:
-        # service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-        # project_id: ${{ env.PROJECT_ID }}
-        # export_default_credentials: true
-# 
-      # 
-    # - name: Get current date # get the date of the build
-      # id: date
-      # run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
-# 
-    # 
+  Deploying:
+   runs-on: ubuntu-latest
+   if: github.event_name == 'push'
+   needs: Microservices-Build
+   env:
+     PROJECT_ID: dev-anibal
+   steps:
+    - name: ⬇️ Downloading artifact
+      uses: actions/download-artifact@v3
+      with:
+       name: my-artifact
+     
+    
+    - name: Display structure of downloaded files
+      run: ls -la
+
+
+    - name: Deploying to GCR
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        project_id: ${{ env.PROJECT_ID }}
+        export_default_credentials: true
+
+      
+    - name: Get current date # get the date of the build
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+
+    
     # - name: Build the Docker image 
       # run: |
         # docker build . --file Dockerfile --tag  $IMAGE_NAME:latest
