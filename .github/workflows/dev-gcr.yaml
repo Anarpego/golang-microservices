@@ -51,7 +51,9 @@ jobs:
         cp logger-service/logger-service.dockerfile .
         cp logger-service/loggerServiceApp .
         cp mail-service/mail-service.dockerfile .
+        cp -R mail-service/templates .
         cp mail-service/mailerApp .
+
         echo "REMOVING ..."
         sudo rm -r project/
         sudo rm -r broker-service/
