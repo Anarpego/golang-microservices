@@ -49,37 +49,36 @@ jobs:
         path: .
 
 
-  # Deploying:
-  #  runs-on: ubuntu-latest
-  #  if: github.event_name == 'push'
-  #  needs: hugo
-  #  env:
-    #  IMAGE_NAME: week9
-    #  PROJECT_ID: anibal-week9
-  #  steps:
-    # - name: ⬇️ Downloading artifact
-      # uses: actions/download-artifact@v3
-      # with:
-      #  name: my-artifact
-    #  
-    # 
-    # - name: Display structure of downloaded files
-      # run: ls -la
-# 
-# 
-    # - name: Deploying to GCR
-      # uses: google-github-actions/setup-gcloud@v0
-      # with:
-        # service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
-        # project_id: ${{ env.PROJECT_ID }}
-        # export_default_credentials: true
-# 
-      # 
-    # - name: Get current date # get the date of the build
-      # id: date
-      # run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
-# 
-    # 
+  Deploying:
+   runs-on: ubuntu-latest
+   if: github.event_name == 'push'
+   needs: Microservices-Build
+   env:
+     PROJECT_ID: dev-anibal
+   steps:
+    - name: ⬇️ Downloading artifact
+      uses: actions/download-artifact@v3
+      with:
+       name: my-artifact
+     
+    
+    - name: Display structure of downloaded files
+      run: ls -la
+
+
+    - name: Deploying to GCR
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+        project_id: ${{ env.PROJECT_ID }}
+        export_default_credentials: true
+
+      
+    - name: Get current date # get the date of the build
+      id: date
+      run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
+
+    
     # - name: Build the Docker image 
       # run: |
         # docker build . --file Dockerfile --tag  $IMAGE_NAME:latest
