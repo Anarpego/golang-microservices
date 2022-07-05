@@ -54,7 +54,7 @@ jobs:
    if: github.event_name == 'push'
    needs: Microservices-Build
    env:
-      PROJECT_ID: anibal-week9
+      PROJECT_ID: dev-anibal
    steps:
     - name: ⬇️ Downloading artifact
       uses: actions/download-artifact@v3
