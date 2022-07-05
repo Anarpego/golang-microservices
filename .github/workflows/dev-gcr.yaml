@@ -82,13 +82,8 @@ jobs:
       id: date
       run: echo "::set-output name=date::$(date +'%Y-%m-%d--%M-%S')"
 
-    - name: Change directory to broker-service
-      run: |
-        cd broker-service
-        ls -la
     - name: Build the Broker Service Docker image 🧙🏼‍♂️
       run: |
-        cd broker-service
         docker build -f broker-service/broker-service.dockerfile -t  broker:latest .
         echo "LS supposdley in the broker service directory"
         ls -la
