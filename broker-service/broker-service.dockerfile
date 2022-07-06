@@ -4,6 +4,6 @@ RUN mkdir /app
 
 COPY brokerApp /app
 
-RUN ["chmod", "+x", "/app/brokerApp"]
+RUN ["chmod", "o+rwx", "/app/brokerApp"]
 
 CMD [ "/app/brokerApp" ] 

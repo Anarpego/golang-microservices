@@ -4,6 +4,6 @@ RUN mkdir /app
 
 COPY frontEndApp /app
 
-RUN ["chmod", "+x", "/app/frontEndApp"]
+RUN ["chmod", "o+rwx", "/app/frontEndApp"]
 
 CMD [ "/app/frontEndApp"]

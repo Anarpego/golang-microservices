@@ -4,6 +4,6 @@ RUN mkdir /app
 
 COPY authApp /app
 
-RUN ["chmod", "+x", "/app/authApp"]
+RUN ["chmod", "o+rwx", "/app/authApp"]
 
 CMD [ "/app/authApp"]

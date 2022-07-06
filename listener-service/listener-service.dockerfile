@@ -4,6 +4,6 @@ RUN mkdir /app
 
 COPY listenerApp /app
 
-RUN ["chmod", "+x", "/app/listenerApp"]
+RUN ["chmod", "o+rwx", "/app/listenerApp"]
 
 CMD [ "/app/listenerApp"]
