@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Jul 05 07:15:00 2022
+# Make data base, printed on Wed Jul 06 14:57:02 2022
 
 # Variables
 
@@ -23,7 +23,7 @@ USERPROFILE = C:\Users\aniba
 # environment
 LOCALAPPDATA = C:\Users\aniba\AppData\Local
 # environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-ea29b060-ad3e-4189-a7a8-dcd096a6b728-sock
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7a52dfa0-ef0e-40df-b72b-ed7018412046-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
@@ -43,7 +43,7 @@ GOPATH = C:\Users\aniba\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_27368_HWDENVZONOOQVQFX
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_29164_YWKIXRXBBSIAQNGF
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.18.3
 # environment
@@ -103,7 +103,7 @@ MAKEFILE_LIST :=
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 27368
+VSCODE_PID = 29164
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -153,7 +153,7 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132928731940735097
 # environment
-WT_SESSION = 7b19d3fa-be07-4843-9a76-bc7e83f06067
+WT_SESSION = a58402e2-aa40-463e-9bc6-7605820efe71
 # environment
 LOGONSERVER = \\LAPTOP-8L9L38EP
 # environment
@@ -187,7 +187,8 @@ PLATFORMCODE = M7
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE = LAPTOP-8L9L38EP
+USERDOMAIN_ROAMINGPROFILE 
+ = LAPTOP-8L9L38EP
 # environment
 NUMBER_OF_PROCESSORS = 12
 # environment
@@ -227,8 +228,7 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT = cloudcode.vscode
 # default
-.FEATURES := target-specific order-only second-expansion else-if shortest- 
-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync load
 # environment
 REGIONCODE = NA
 # environment
@@ -309,6 +309,6 @@ GNUmakefile:
 # strcache performance: lookups = 26 / hit rate = 11%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Tue Jul 05 07:15:00 2022
+# Finished Make data base on Wed Jul 06 14:57:02 2022
 
  
