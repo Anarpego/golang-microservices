@@ -1,11 +1,7 @@
 name: Microservices
 
 on:
-  push:
-   branches: [ main ]
-  pull_request:
-    branches: [ main ]
-    types: [opened, synchronize]
+  [workflow_dispatch]
 
 jobs:
   Microservices-Build:
@@ -80,7 +76,6 @@ jobs:
 
   Deploying:
    runs-on: ubuntu-latest
-   if: github.event_name == 'push'
    needs: Microservices-Build
    env:
       PROJECT_ID: dev-anibal

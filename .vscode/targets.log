@@ -8,10 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Jul 06 14:57:02 2022
+# Make data base, printed on Fri Jul 08 12:06:08 2022
 
 # Variables
 
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -22,8 +24,6 @@ LC_ALL = C
 USERPROFILE = C:\Users\aniba
 # environment
 LOCALAPPDATA = C:\Users\aniba\AppData\Local
-# environment
-VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-7a52dfa0-ef0e-40df-b72b-ed7018412046-sock
 # environment
 WSLENV = WT_SESSION::WT_PROFILE_ID
 # environment
@@ -43,9 +43,11 @@ GOPATH = C:\Users\aniba\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_29164_YWKIXRXBBSIAQNGF
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11616_NOFCFGCBKBSZZPWO
 # environment
-CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.18.3
+CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.19.0
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -54,12 +56,10 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 %D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
 # automatic
 ^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
-# environment
-VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\aniba\AppData\Roaming\Code\CachedData\30d9c6cd9483b2cc586687151bcbcd635f373630
+VSCODE_CODE_CACHE_PATH = C:\Users\aniba\AppData\Roaming\Code\CachedData\92d25e35d9bf1a6b16f7d0758f25d48ace11e5b9
 # environment
 LANG = C
 # default
@@ -78,8 +78,6 @@ ONEDRIVE = C:\Users\aniba\OneDrive
 POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
 # makefile
 CURDIR := c:/Users/aniba/microservices-anibal
-# environment
-VSCODE_PIPE_LOGGING = true
 # environment
 SPARK_HOME = C:\Users\aniba\Documents\Spark\spark-3.2.1-bin-hadoop3.2
 # environment
@@ -101,9 +99,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_VERBOSE_LOGGING = true
-# environment
-VSCODE_PID = 29164
+VSCODE_PID = 11616
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -153,11 +149,9 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132928731940735097
 # environment
-WT_SESSION = a58402e2-aa40-463e-9bc6-7605820efe71
+WT_SESSION = 66c7f7af-c251-425f-87d6-5b88d68543f5
 # environment
 LOGONSERVER = \\LAPTOP-8L9L38EP
-# environment
-VSCODE_LOG_NATIVE = false
 # environment
 USERNAME = anibal
 # environment
@@ -187,8 +181,7 @@ PLATFORMCODE = M7
 # environment
 PROGRAMFILES(X86) = C:\Program Files (x86)
 # environment
-USERDOMAIN_ROAMINGPROFILE 
- = LAPTOP-8L9L38EP
+USERDOMAIN_ROAMINGPROFILE = LAPTOP-8L9L38EP
 # environment
 NUMBER_OF_PROCESSORS = 12
 # environment
@@ -210,7 +203,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 TEMP = C:\Users\aniba\AppData\Local\Temp
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\9dccf481e33b3689a1d0fc47d82429c0-1.68.1-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\9dccf481e33b3689a1d0fc47d82429c0-1.69.0-main-sock
 # environment
 GOPROXY = https://proxy.golang.org,direct
 # default
@@ -221,6 +214,8 @@ GOPROXY = https://proxy.golang.org,direct
 SUFFIXES := 
 # environment
 ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
 # environment
 VSCODE_CLI = 1
 # environment
@@ -236,7 +231,7 @@ PROCESSOR_REVISION = 8d01
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=111/1024=11%, Rehash=0, Collisions=11/135=8%
+# Load=109/1024=11%, Rehash=0, Collisions=9/133=7%
 
 # Pattern-specific Variable Values
 
@@ -303,12 +298,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 23 / storage = 289 B / avg = 12 B
+#  
+strcache buffers: 1 (0) / strings = 23 / storage = 289 B / avg = 12 B
 # current buf: size = 8174 B / used = 289 B / count = 23 / avg = 12 B
 
 # strcache performance: lookups = 26 / hit rate = 11%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Wed Jul 06 14:57:02 2022
+# Finished Make data base on Fri Jul 08 12:06:08 2022
 
  
