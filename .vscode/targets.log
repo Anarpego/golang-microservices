@@ -8,12 +8,10 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jul 08 12:06:08 2022
+# Make data base, printed on Sat Jul 09 21:37:38 2022
 
 # Variables
 
-# environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
 SYSTEMDRIVE = C:
 # environment
@@ -43,11 +41,9 @@ GOPATH = C:\Users\aniba\go
 # automatic
 @D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11616_NOFCFGCBKBSZZPWO
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_10372_MRVUSGAYVTLSALQM
 # environment
 CLOUDSDK_METRICS_ENVIRONMENT_VERSION = 1.19.0
-# environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
@@ -99,7 +95,7 @@ MAKEFILE_LIST :=
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 11616
+VSCODE_PID = 10372
 # automatic
 ?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
 # environment
@@ -149,7 +145,7 @@ PROMPT = $P$G
 # environment
 CHOCOLATEYLASTPATHUPDATE = 132928731940735097
 # environment
-WT_SESSION = 66c7f7af-c251-425f-87d6-5b88d68543f5
+WT_SESSION = c466248d-6b4e-46b0-93cb-8318818ba6f9
 # environment
 LOGONSERVER = \\LAPTOP-8L9L38EP
 # environment
@@ -215,8 +211,6 @@ SUFFIXES :=
 # environment
 ALLUSERSPROFILE = C:\ProgramData
 # environment
-SESSIONNAME = Console
-# environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
@@ -231,7 +225,7 @@ PROCESSOR_REVISION = 8d01
 # environment
 PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 # variable set hash-table stats:
-# Load=109/1024=11%, Rehash=0, Collisions=9/133=7%
+# Load=106/1024=10%, Rehash=0, Collisions=8/130=6%
 
 # Pattern-specific Variable Values
 
@@ -239,7 +233,7 @@ PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 141 Stepping 1, GenuineIntel
 
 # Directories
 
-# . (key c:/Users/aniba/microservices-anibal, mtime 1656990007): 16 files, no impossibilities.
+# . (key c:/Users/aniba/microservices-anibal, mtime 1657303653): 16 files, no impossibilities.
 
 # 16 files, no impossibilities in 1 directories.
 
@@ -298,13 +292,13 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-#  
-strcache buffers: 1 (0) / strings = 23 / storage = 289 B / avg = 12 B
+# strcache buffers: 1 (0) / strings = 23 / storage = 289 B / avg = 12 B
 # current buf: size = 8174 B / used = 289 B / count = 23 / avg = 12 B
 
-# strcache performance: lookups = 26 / hit rate = 11%
+# strcache perfo 
+rmance: lookups = 26 / hit rate = 11%
 # hash-table stats:
 # Load=23/8192=0%, Rehash=0, Collisions=0/26=0%
-# Finished Make data base on Fri Jul 08 12:06:08 2022
+# Finished Make data base on Sat Jul 09 21:37:38 2022
 
  
